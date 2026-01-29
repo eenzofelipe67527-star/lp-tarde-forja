@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,8 @@
         <a href="#s2">SEGUNDA</a>
         <a href="#s3">TERCEIRA</a>
         <a href="#s4">QUARTA</a>
+        <a href="#s5">QUINTA</a>
+
     </nav>
 
     <main>
@@ -32,6 +35,7 @@
                     Doloribus, quaerat, eaque laborum quisquam incidunt sunt odio
                     ratione earum architecto esse.
                 </p>
+
             </div>
         </section>
 
@@ -76,28 +80,39 @@
         <!-- SECTION 3 -->
         <section id="s3">
             <h2>VÍDEO</h2>
-            <iframe class="video" src="https://www.youtube.com/embed/6oRr-fvv5z4?si=r_BZo3LU2oTULOcB" title="YouTube video player" frameborder="0"
-             allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen></iframe></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/6oRr-fvv5z4?si=r_BZo3LU2oTULOcB"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
         </section>
 
         <section id="s4">
             <div>
-                <h2>TÍTULO</h2>
+                <h1>TÍTULO</h1>
             </div>
 
             <div>
-                <div>
+                <div class="img1">
                     <img src="./Images/img01.webp" alt="Imagem 01">
                 </div>
 
-                <div class="text">
-                    <h3>fafsd</h3>
+                <div class="texts4">
+                    <h3>texto</h3>
                 </div>
 
-                <div>
+                <div class="img3">
                     <img src="./Images/img02.jpeg" alt="Imagem 02">
                 </div>
+            </div>
+        </section>
+        <section id="s5">
+            <h2>CONTATO</h2>
+            <div class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <label for="assunto">Mensagem</label>
+                <textarea id="assunto" placeholder="Digite sua mensagem"></textarea>
+                <button onclick="enviar()">ENVIAR</button>
             </div>
         </section>
     </main>
@@ -121,4 +136,5 @@
     </footer>
 
 </body>
+
 </html>

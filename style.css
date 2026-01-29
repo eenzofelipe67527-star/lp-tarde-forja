@@ -13,13 +13,14 @@ a {
     font-size: 18px;
 }
 
-nav a{
-transition: all 200ms ease-in-out;
+nav a {
+    transition: all 200ms ease-in-out;
 }
 
-nav a:hover{
+nav a:hover {
     transform: scale(1.05);
     color: rgba(0, 4, 255, 0.849);
+    flex-wrap: wrap;
 }
 
 a:hover {
@@ -36,6 +37,7 @@ i:hover {
     transform: translateY(-5px) scale(1.1);
 }
 
+
 nav {
     position: fixed;
     width: 100%;
@@ -50,14 +52,19 @@ nav {
 }
 
 #s1 {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 400px;
+    gap: 200px;
+    background-color: azure;
+    
 }
+
+
 
 .left {
     width: 400px;
@@ -72,7 +79,7 @@ nav {
 
 .left img {
     width: 400px;
-    height: auto;
+    height: 400px;
     transition: all 200ms ease-in-out;
 }
 
@@ -112,11 +119,11 @@ nav {
     border: 2px solid #090909;
     background-color: rgba(0, 0, 0, 0.6);
     color: aliceblue;
-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
-.card:hover{
-        transform: scale(1.05);
+.card:hover {
+    transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -149,14 +156,19 @@ transition: all 200ms ease-in-out;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: azure;
 }
 
-.video{
+#s3 h2 {
+    height: 55px;
+}
+
+.video {
     width: 560px;
     height: 315px;
     box-shadow: 0px 3px 10px black;
     border-radius: 20px;
-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .video:hover {
@@ -166,47 +178,62 @@ transition: all 200ms ease-in-out;
 
 
 #s4 {
-        height: 100vh;
+    height: 100vh;
     padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: azure;
+    background-image: url(./Images/pinguim.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     box-shadow: 0px 2px 5px black;
     gap: 150px;
-        min-height: 100vh;
+    min-height: 100vh;
     height: auto;
     padding: 40px;
 }
 
-#s4 div{
+#s4 div {
     align-items: center;
     justify-content: center;
-        display: flex;
+    display: flex;
     flex-direction: row;
     gap: 100px;
     flex-wrap: wrap;
-transition: all 200ms ease-in-out;
-    
+    transition: all 200ms ease-in-out;
 }
 
-#s4 div:hover{
-        transform: scale(1.05);
+.img1:hover {
+    transform: scale(1.05);
 }
 
-.text{
+.texts4 {
+    border: 3px solid #090909;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+}
+
+.texts4:hover {
+    transform: scale(1.05);
+}
+
+.img3:hover {
+    transform: scale(1.05);
+}
+
+.text {
     padding: 100px;
-        align-items: center;
+    align-items: center;
     justify-content: center;
-        display: flex;
+    display: flex;
     flex-direction: row;
     border: 3px solid #090909;
     border-radius: 10px;
-background-color: aliceblue;
+    background-color: aliceblue;
 }
-
-
 
 footer {
     height: 50px;
@@ -217,11 +244,58 @@ footer {
     gap: 30px;
 }
 
-@media (width <= 1000px){
-    #s1{
+#s5 {
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.formulario label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -25px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+}
+
+.formulario textarea {
+    max-width: 100%;
+    min-width: 255px;
+    width: 255px;
+    padding: 10px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+}
+@media (width <=1000px) {
+    #s1 {
         padding-top: 100px;
     }
-    #s2{
-        margin-top: 100px;
+    
+    #s2 {
+        margin-top: 0px;
     }
+    
 }
